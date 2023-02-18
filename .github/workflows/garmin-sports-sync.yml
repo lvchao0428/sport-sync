@@ -5,29 +5,29 @@ on:
   schedule:
     - cron: '30 * * * *'
 env:
-  GITHUB_NAME: XiaoSiHwang
-  GITHUB_EMAIL: 1009326507@qq.com
+  GITHUB_NAME: ultrapp
+  GITHUB_EMAIL: 410148119@qq.com
   AESKEY: ${{ secrets.AESKEY }}
   SOURCE_GARMIN_AUTH_DOMAIN: ${{ secrets.SOURCE_GARMIN_AUTH_DOMAIN }}
   SOURCE_GARMIN_EMAIL: ${{ secrets.SOURCE_GARMIN_EMAIL }}
   SOURCE_GARMIN_PASSWORD: ${{ secrets.SOURCE_GARMIN_PASSWORD }}
-  SYNC_GARMIN_AUTH_DOMAIN: ${{ secrets.SYNC_GARMIN_AUTH_DOMAIN }}  
+  SYNC_GARMIN_AUTH_DOMAIN: ${{ secrets.SYNC_GARMIN_AUTH_DOMAIN }}
   SYNC_GARMIN_EMAIL:  ${{ secrets.SYNC_GARMIN_EMAIL }}
   SYNC_GARMIN_PASSWORD:  ${{ secrets.SYNC_GARMIN_PASSWORD }}
   WEBDAV_URL:  ${{ secrets.WEBDAV_URL }}
   WEBDAV_USERNAME:  ${{ secrets.WEBDAV_USERNAME }}
   WEBDAV_PASSWORD:  ${{ secrets.WEBDAV_PASSWORD }}
   LOCAL_OR_WEBDAV: ${{ secrets.LOCAL_OR_WEBDAV }}
-  
+
   ## 通知推送配置
   # 企业微信机器人
   QYWX_KEY:  ${{ secrets.QYWX_KEY }}
-  
+
   # 叮叮机器人
   DD_BOT_SECRET:  ${{ secrets.DD_BOT_SECRET }}
   DD_BOT_TOKEN:  ${{ secrets.DD_BOT_TOKEN }}
 
-  
+
 jobs:
   build:
 
