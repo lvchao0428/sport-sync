@@ -60,8 +60,10 @@ jobs:
         python scripts/garmin/garmin_sync.py
     - name: Push new cookie
       run: |
-        git config --local user.email "${{ env.GITHUB_EMAIL }}"
-        git config --local user.name "${{ env.GITHUB_NAME }}"
+        #git config --local user.email "${{ env.GITHUB_EMAIL }}"
+        git config --local user.email "410148119@qq.com"
+        #git config --local user.name "${{ env.GITHUB_NAME }}"
+        git config --local user.name "ultrapp"
         git add .
         git commit -m 'update garmin cookie' || echo "nothing to commit"
         git push || echo "nothing to push"
